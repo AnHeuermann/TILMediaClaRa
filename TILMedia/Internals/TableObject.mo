@@ -20,7 +20,7 @@ class TableObject
 */
 #ifndef TILMEDIATABLEALLOCATOR
 #define TILMEDIATABLEALLOCATOR
-#if defined(_JMI_GLOBAL_H) || defined(WSM_VERSION) || defined(DYMOLA_STATIC) || (defined(ITI_CRT_INCLUDE) && !defined(ITI_COMP_SIM))
+#if defined(_JMI_GLOBAL_H) || defined(WSM_VERSION) || defined(DYMOLA_STATIC) || (defined(ITI_CRT_INCLUDE) && !defined(ITI_COMP_SIM)) || defined(OPENMODELICA_H_)
 void* TILMedia_allocateTable_errorInterface(const char* table, const char* parameters, void* formatMessage, void* formatError, void* dymolaErrorLev);
 #if defined(DYMOLA_STATIC)
 #ifndef _WIN32

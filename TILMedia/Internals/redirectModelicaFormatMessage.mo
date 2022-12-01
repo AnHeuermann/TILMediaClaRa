@@ -18,7 +18,7 @@ function redirectModelicaFormatMessage
 */
 #ifndef TILMEDIAMODELICAFORMATMESSAGE
 #define TILMEDIAMODELICAFORMATMESSAGE
-#if defined(_JMI_GLOBAL_H) || defined(WSM_VERSION) || defined(DYMOLA_STATIC) || (defined(ITI_CRT_INCLUDE) && !defined(ITI_COMP_SIM))
+#if defined(_JMI_GLOBAL_H) || defined(WSM_VERSION) || defined(DYMOLA_STATIC) || (defined(ITI_CRT_INCLUDE) && !defined(ITI_COMP_SIM)) || defined(OPENMODELICA_H_)
 int TILMedia_redirectModelicaFormatMessage(void* _str);
 int TILMedia_redirectModelicaFormatError(void* _str);
 int TILMedia_redirectDymolaErrorFunction(void* _str);
